@@ -15,15 +15,15 @@ It has been generated successfully based on your OpenAPI spec. However, it is no
 - [ ] 🎁 Publish your SDK to package managers by [configuring automatic publishing](https://www.speakeasyapi.dev/docs/productionize-sdks/publish-sdks)
 - [ ] ✨ When ready to productionize, delete this section from the README
 <!-- Start SDK Installation -->
-# SDK Installation
+## SDK Installation
 
-## NPM
+### NPM
 
 ```bash
 npm add https://github.com/speakeasy-sdks/ASC_Typescript_SDK
 ```
 
-## Yarn
+### Yarn
 
 ```bash
 yarn add https://github.com/speakeasy-sdks/ASC_Typescript_SDK
@@ -32,7 +32,7 @@ yarn add https://github.com/speakeasy-sdks/ASC_Typescript_SDK
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
+### Example
 
 ```typescript
 import { Asc } from "asc";
@@ -51,10 +51,10 @@ import { Asc } from "asc";
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-# Available Resources and Operations
+## Available Resources and Operations
 
 
-## [pets](docs/sdks/pets/README.md)
+### [pets](docs/sdks/pets/README.md)
 
 * [createPets](docs/sdks/pets/README.md#createpets) - Create a pet
 * [listPets](docs/sdks/pets/README.md#listpets) - List all pets
@@ -68,7 +68,7 @@ import { Asc } from "asc";
 <!-- End Dev Containers -->
 
 <!-- Start Error Handling -->
-# Error Handling
+## Error Handling
 
 Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
 
@@ -76,8 +76,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 400-600         | */*             |
 
-
-## Example
+Example
 
 ```typescript
 import { Asc } from "asc";
@@ -99,9 +98,9 @@ import { Asc } from "asc";
 <!-- End Error Handling -->
 
 <!-- Start Server Selection -->
-# Server Selection
+## Server Selection
 
-## Select Server by Index
+### Select Server by Index
 
 You can override the default server globally by passing a server index to the `serverIdx: number` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
 
@@ -109,7 +108,7 @@ You can override the default server globally by passing a server index to the `s
 | - | ------ | --------- |
 | 0 | `http://petstore.swagger.io/v1` | None |
 
-For example:
+#### Example
 
 ```typescript
 import { Asc } from "asc";
@@ -129,10 +128,9 @@ import { Asc } from "asc";
 ```
 
 
-## Override Server URL Per-Client
+### Override Server URL Per-Client
 
 The default server can also be overridden globally by passing a URL to the `serverURL: str` optional parameter when initializing the SDK client instance. For example:
-
 ```typescript
 import { Asc } from "asc";
 
@@ -152,10 +150,9 @@ import { Asc } from "asc";
 <!-- End Server Selection -->
 
 <!-- Start Custom HTTP Client -->
-# Custom HTTP Client
+## Custom HTTP Client
 
 The Typescript SDK makes API calls using the (axios)[https://axios-http.com/docs/intro] HTTP library.  In order to provide a convenient way to configure timeouts, cookies, proxies, custom headers, and other low-level configuration, you can initialize the SDK client with a custom `AxiosInstance` object.
-
 
 For example, you could specify a header for every request that your sdk makes as follows:
 
@@ -167,11 +164,8 @@ const httpClient = axios.create({
     headers: {'x-custom-header': 'someValue'}
 })
 
-
 const sdk = new Asc({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
