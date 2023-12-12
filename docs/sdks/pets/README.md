@@ -16,7 +16,7 @@ Create a pet
 ```typescript
 import { Asc } from "asc";
 
-(async() => {
+async function run() {
   const sdk = new Asc();
 
   const res = await sdk.pets.createPets();
@@ -24,7 +24,9 @@ import { Asc } from "asc";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -53,7 +55,7 @@ List all pets
 import { Asc } from "asc";
 import { ListPetsRequest } from "asc/dist/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new Asc();
 const limit: number = 21453;
 
@@ -62,7 +64,9 @@ const limit: number = 21453;
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -92,7 +96,7 @@ Info for a specific pet
 import { Asc } from "asc";
 import { ShowPetByIdRequest } from "asc/dist/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new Asc();
 const petId: string = "string";
 
@@ -101,7 +105,9 @@ const petId: string = "string";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
