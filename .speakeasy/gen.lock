@@ -4,15 +4,15 @@ management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.230.3
-  releaseVersion: 0.2.2
-  configChecksum: 09796f90b674b6c341d6ad68d28b263f
+  generationVersion: 2.258.2
+  releaseVersion: 0.2.3
+  configChecksum: bf1d5bd6bc050bbf3d4c319d0c9e33c2
   repoURL: https://github.com/speakeasy-sdks/ASC_Typescript_SDK.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/ASC_Typescript_SDK
 features:
   typescript:
-    core: 3.4.5
+    core: 3.4.7
     flattening: 2.81.1
     globalServerURLs: 2.82.1
 generatedFiles:
