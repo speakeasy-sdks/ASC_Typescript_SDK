@@ -3,18 +3,18 @@ id: c227ae71-ee61-4c1b-b977-3a15f1d31b2d
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: internal
-  generationVersion: 2.258.2
-  releaseVersion: 0.2.3
-  configChecksum: bf1d5bd6bc050bbf3d4c319d0c9e33c2
+  speakeasyVersion: 1.207.1
+  generationVersion: 2.280.6
+  releaseVersion: 0.2.4
+  configChecksum: a62f5d6d93b4579660e4f2749582a05a
   repoURL: https://github.com/speakeasy-sdks/ASC_Typescript_SDK.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/ASC_Typescript_SDK
 features:
   typescript:
-    core: 3.4.7
+    core: 3.4.8
     flattening: 2.81.1
-    globalServerURLs: 2.82.1
+    globalServerURLs: 2.82.2
 generatedFiles:
   - src/sdk/pets.ts
   - src/sdk/sdk.ts
